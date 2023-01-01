@@ -1,14 +1,14 @@
 {
     "manifest_version": 3,
-    "name": "My Bing Search Extension",
-    "description": "An extension that searches on Bing 50 times, refreshing the page each time it finishes loading.",
-    "version": "1.0",
+    "name": "Bing Quick Search",
+    "description": "An extension that completes the search requirements for the rewards.",
+    "version": "1.1",
     "icons": {
         "16": "icon.png",
         "48": "icon.png",
         "128": "icon.png"
     },
-    "permissions": ["activeTab", "webNavigation", "tabs", "scripting"],
+    "permissions": ["tabs"],
     "action": {
         "default_icon": { "16": "icon.png" },
         "default_popup": "popup.html"
