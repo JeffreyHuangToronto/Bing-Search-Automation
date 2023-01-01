@@ -1,6 +1,6 @@
 let searchInterval;
 // let iteration = 0;
-let refreshTime = 250; // 1000ms = 1 second
+let refreshTime = 50; // 1000ms = 1 second
 
 chrome.runtime.onMessage.addListener((request) => {
     if (request.type === "start-90") {
@@ -12,7 +12,7 @@ chrome.runtime.onMessage.addListener((request) => {
                 });
                 iteration += 1;
 
-                if (iteration >= 30) {
+                if (iteration >= 120) {
                     clearInterval(searchInterval);
                 }
             });
@@ -26,7 +26,7 @@ chrome.runtime.onMessage.addListener((request) => {
                 });
                 iteration += 1;
 
-                if (iteration >= 20) {
+                if (iteration >= 80) {
                     clearInterval(searchInterval);
                 }
             });
@@ -40,7 +40,7 @@ chrome.runtime.onMessage.addListener((request) => {
                 });
                 iteration += 1;
 
-                if (iteration >= 6) {
+                if (iteration >= 8) {
                     clearInterval(searchInterval);
                 }
             });
