@@ -10,6 +10,7 @@
 <img width="28" alt="image" src="https://user-images.githubusercontent.com/48161673/210163624-6d37a14b-2238-42e5-92e5-bfa2b0356487.png">
 6. Click the extention icon
 7. Choose any of the options
-<img width="76" alt="image" src="https://user-images.githubusercontent.com/48161673/210163632-58aed4bd-110d-4e47-b712-aeeeffc9c02b.png">
+
+![image](https://user-images.githubusercontent.com/48161673/212246675-9400adcb-3ae1-4ed6-b85a-4752b09d6a3f.png)
 # Time to complete 90 points search
 6 seconds
