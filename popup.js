@@ -31,7 +31,7 @@ startSearchButton60.addEventListener("click", () => {
     searchInterval = setInterval(() => {
         iteration += 1;
 
-        progress.textContent = `${iteration}/80`;
+        progress.textContent = `${((iteration / 80) * 100).toFixed(2)}%`;
         if (iteration >= 80 || stop) {
             clearInterval(searchInterval);
             disableButtons(false);
@@ -47,7 +47,7 @@ startSearchButton12.addEventListener("click", () => {
     searchInterval = setInterval(() => {
         iteration += 1;
 
-        progress.textContent = `${iteration}/8`;
+        progress.textContent = `${((iteration / 8) * 100).toFixed(2)}%`;
         if (iteration >= 8 || stop) {
             clearInterval(searchInterval);
             disableButtons(false);
