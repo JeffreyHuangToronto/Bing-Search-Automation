@@ -14,3 +14,8 @@
 ![image](https://user-images.githubusercontent.com/48161673/212246675-9400adcb-3ae1-4ed6-b85a-4752b09d6a3f.png)
 # Time to complete 90 points search
 6 seconds
+
+# 1.3 Update:
+ - New Slow Mode Feature
+ - New Look For UI
+ <img width="103" alt="image" src="https://user-images.githubusercontent.com/48161673/213361715-1ed74f14-0f33-4da0-afe1-36755559260d.png">
