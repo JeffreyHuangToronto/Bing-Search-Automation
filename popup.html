@@ -2,13 +2,32 @@
 <html>
     <head>
         <title>My Bing Search Extension</title>
+        <link rel="stylesheet" href="popup.css" />
     </head>
     <body>
         <button id="start-search-90">Start Search 90</button>
         <button id="start-search-60">Start Search 60</button>
         <button id="start-search-12">Start Search 12</button>
         <button id="stop-search">Stop Search</button>
-        <p id="progress">0.00%</p>
+
+        <p id="currentSpeed"></p>
+        <p id="progress">Progress: 0.00%</p>
+
+        <label><b>Slow Mode</b></label>
+        <div class="onoffswitch">
+            <input
+                type="checkbox"
+                name="onoffswitch"
+                class="onoffswitch-checkbox"
+                id="myonoffswitch"
+                tabindex="0"
+                checked
+            />
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
         <script src="popup.js"></script>
     </body>
 </html>
