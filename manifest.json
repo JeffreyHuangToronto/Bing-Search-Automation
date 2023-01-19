@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Bing Quick Search",
     "description": "An extension that completes the search requirements for the rewards.",
-    "version": "1.2",
+    "version": "1.3",
     "icons": {
         "16": "icon.png",
         "48": "icon.png",
