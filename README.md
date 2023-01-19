@@ -8,14 +8,17 @@
 4. Select the downloaded folder
 5. Pin the extention
 <img width="28" alt="image" src="https://user-images.githubusercontent.com/48161673/210163624-6d37a14b-2238-42e5-92e5-bfa2b0356487.png">
-6. Click the extention icon
-7. Choose any of the options
 
-![image](https://user-images.githubusercontent.com/48161673/212246675-9400adcb-3ae1-4ed6-b85a-4752b09d6a3f.png)
-# Time to complete 90 points search
-6 seconds
+## You are now ready to use this plugin!
 
-# 1.3 Update:
+# Updates:
+
+## v.1.4 Update: Jan 19, 2023
+ - New T/F for Quizs
+ <img width="1350" alt="image" src="https://user-images.githubusercontent.com/48161673/213368373-3dd4827e-55a8-4c19-bf04-24305c14bcea.png">
+
+
+## v.1.3 Update: Jan 19, 2023
  - New Slow Mode Feature
  - New Look For UI
  <img width="103" alt="image" src="https://user-images.githubusercontent.com/48161673/213361715-1ed74f14-0f33-4da0-afe1-36755559260d.png">
