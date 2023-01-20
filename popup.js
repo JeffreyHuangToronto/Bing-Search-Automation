@@ -1,6 +1,4 @@
-const startSearchButton90 = document.getElementById("start-search-90");
-const startSearchButton60 = document.getElementById("start-search-60");
-const startSearchButton12 = document.getElementById("start-search-12");
+const startSearchButton = document.getElementById("start-search-90");
 const stopSearchButton = document.getElementById("stop-search");
 const progress = document.getElementById("progress");
 
@@ -19,7 +17,7 @@ speedToggle.addEventListener("click", () => {
 
 let stop = false;
 
-startSearchButton90.addEventListener("click", () => {
+startSearchButton.addEventListener("click", () => {
     let iteration = 0;
     chrome.runtime.sendMessage({
         type: "start-90",
@@ -41,42 +39,6 @@ startSearchButton90.addEventListener("click", () => {
         }
     }, refreshTime);
 });
-startSearchButton60.addEventListener("click", () => {
-    let iteration = 0;
-    chrome.runtime.sendMessage({ type: "start-60", speed: refreshTime });
-    disableButtons(true);
-    setStop(false);
-
-    searchInterval = setInterval(() => {
-        iteration += 1;
-
-        progress.textContent = `Progress: ${((iteration / 80) * 100).toFixed(
-            2
-        )}%`;
-        if (iteration >= 80 || stop) {
-            clearInterval(searchInterval);
-            disableButtons(false);
-        }
-    }, refreshTime);
-});
-startSearchButton12.addEventListener("click", () => {
-    let iteration = 0;
-    chrome.runtime.sendMessage({ type: "start-12", speed: refreshTime });
-    disableButtons(true);
-    setStop(false);
-
-    searchInterval = setInterval(() => {
-        iteration += 1;
-
-        progress.textContent = `Progress:  ${((iteration / 8) * 100).toFixed(
-            2
-        )}%`;
-        if (iteration >= 8 || stop) {
-            clearInterval(searchInterval);
-            disableButtons(false);
-        }
-    }, refreshTime);
-});
 
 stopSearchButton.addEventListener("click", () => {
     chrome.runtime.sendMessage({ type: "stop" });
@@ -88,9 +50,7 @@ function setStop(bool) {
 }
 
 function disableButtons(bool) {
-    startSearchButton90.disabled = bool;
-    startSearchButton60.disabled = bool;
-    startSearchButton12.disabled = bool;
+    startSearchButton.disabled = bool;
     stopSearchButton.disabled = !bool;
 }
 
